@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Oswald:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 45px;
+}
+.logo {
+  margin-left: 10px;
+  transition: all 0.5s;
+  font-size: 40px;
+  font-family: "Ceviche One", cursive;
+}
+.logo:hover {
+  color: magenta;
+}
+
+.nav-btn {
+  padding: 0 15px;
+  border: none;
+  background-color: transparent;
+  height: 45px;
+  font-size: 14px;
+}
+.nav-btn:hover {
+  background-color: white;
+}
+.mail {
+  margin-right: 15px;
+}
+
+.fa-envelope {
+  font-size: 25px;
+  color: gray;
+}
+.fa-envelope:hover {
+  color: black;
+}
+
+.news {
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  top: 45px;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  box-shadow: 0 16px 48px rgb(0 0 0 / 15%);
+  padding-left: 20px;
+  font-size: 14px;
+  background-color: #fd3;
+}
+
+.headingBox {
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  gap: 50%;
+  display: flex;
+  background-color: white;
+}
+
+.headingBox h1 {
+  font-size: 100px;
+  font-family: "Ceviche One", cursive;
+}
+.headingBox p {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 35px;
+}
+
+.top-headlines-split {
+  height: 90vh;
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+}
+.top-headline-box:first-child {
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0.5%;
+}
+.top-headline-box:last-child {
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1%;
+  margin: 0.5% 0.5% 0.5% 0;
+}
+.top-headline-left-one,
+.top-headline-left-two {
+  position: relative;
+  margin: 1%;
+  height: 48%;
+}
+.top-headline-left-one,
+.top-headline-right-two {
+  position: relative;
+  flex-basis: 66%;
+}
+
+.top-headline-left-one img,
+.top-headline-left-two img,
+.box1 img,
+.box2 img,
+.top-headline-right-two img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.top-headline-right-one,
+.top-headline-right-two {
+  height: 49%;
+  width: 100%;
+  gap: 1%;
+  display: flex;
+}
+
+.box1,
+.box2 {
+  width: 49%;
+  height: 100%;
+  position: relative;
+}
+.headlineBox,
+.headlineBox1 {
+  width: 99%;
+  position: absolute;
+  color: white;
+  padding: 0 0 10px 10px;
+  box-shadow: inset 0px -63px 46px -34px rgba(0, 0, 0, 1);
+  bottom: 0;
+}
+.headlineBox h1 {
+  font-size: 38px;
+  line-height: 35px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.headlineBox1 h1 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.ticketBox {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 75%;
+  top: 70px;
+  left: 80px;
+}
+#ticketBtn {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+.ticketBox h1 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.showcase {
+  text-align: center;
+  background-color: whitesmoke;
+  margin-top: 120px;
+  height: 250px;
+  width: 100%;
+  padding: 50px 20px;
+}
+.latestHeading {
+  margin-left: 6.2%;
+  font-family: sans-serif;
+  font-family: "Mohave", sans-serif;
+  font-weight: 900;
+}
+.showcase h1 {
+  align-items: center;
+  color: #a7aab2;
+  font-family: "Mohave", sans-serif;
+}
+.trendingBox {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trending {
+  display: flex;
+  height: 150px;
+  width: 250px;
+  position: relative;
+}
+
+.trending p:first-child {
+  font-family: "Oswald", sans-serif;
+  color: #cc0099;
+  font-size: 30px;
+  margin-right: 15px;
+  margin-top: -8px;
+  font-weight: bolder;
+}
+
+.trending p:last-child {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.latest-stories {
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  height: 700px;
+}
+.stories {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.story {
+  width: 23%;
+  margin-left: 20px;
+  height: 300px;
+}
+.story img {
+  margin: 0 auto;
+}
+
+.story p {
+  margin-top: 10px;
+  color: #a7aab2;
+}
+#storyCaption {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: black;
+  line-height: 25px;
+}
+
+.channels {
+  height: 190vh;
+  width: 96.5vw;
+  background-color: whitesmoke;
+  padding: 50px 20px;
+}
+
+.channel h1 {
+  font-family: sans-serif;
+  font-family: "Mohave", sans-serif;
+  font-weight: 900;
+}
+
+.channelList {
+  width: 95%;
+  margin: 0 auto;
+  height: 230px;
+  display: flex;
+  gap: 15px;
+}
+.channel {
+  background-color: black;
+  text-align: center;
+  width: 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.channel img {
+  width: 50%;
+  margin-top: 35px;
+  height: 30px;
+}
+.channel p {
+  width: 80%;
+  font-family: sans-serif;
+  color: white;
+  margin: 0 auto;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+.subscribe {
+  height: 300px;
+  margin-top: 80px;
+  background-color: #cc0099;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.subscribe h1 {
+  display: inline-block;
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.subscribe p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.inputBar {
+  width: 50%;
+  margin: 0 auto 15px auto;
+  height: 50px;
+}
+
+.inputBar input {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 85%;
+  border: none;
+  padding-left: 20px;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.inputBar button {
+  height: 100%;
+  font-size: 15px;
+  color: white;
+  border: none;
+  width: 15%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #c09;
+}
+
+.inputBar button:hover {
+  background-color: #4cacff;
+}
+
+.icons {
+  width: 40%;
+  height: 45px;
+  margin: 15px auto;
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: center;
+}
+.icons i {
+  color: lightgray;
+  font-size: 30px;
+}
+
+.icons i:hover {
+  color: white;
+}
+
+.youtube {
+  width: 71%;
+  height: 82vh;
+  display: flex;
+  margin-top: 100px;
+  margin: 100px auto;
+}
+
+#main-video {
+  height: 500px;
+  width: 800px;
+}
+
+.left-caption {
+  background-color: black;
+  color: white;
+  margin-top: -5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  height: 118.5px;
+  font-family: sans-serif;
+  padding-left: 30px;
+  gap: 10px;
+}
+.left-caption p {
+  font-size: small;
+  color: #a7aab2;
+}
+
+.youtube-right {
+  height: 100%;
+  overflow: auto;
+  margin-left: 10px;
+}
+.youtube-right div p {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.youtube-right div {
+  margin-bottom: 10px;
+  width: 220px;
+}
+.youtube-right iframe {
+  width: 220px;
+  height: 130px;
+}
+
+footer {
+  background-color: black;
+  height: 50vh;
+  color: white;
+}
+
+.footer-one {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  align-items: center;
+  height: 70%;
+  border-bottom: 1px solid gray;
+}
+.footer-one div {
+  display: flex;
+  font-family: sans-serif;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.footer-one div a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #0cc;
+}
+.footer-one div h4 {
+  font-size: 20px;
+}
+
+.footer-one div h1 {
+  font-family: "Ceviche One", cursive;
+  font-size: 120px;
+  margin-bottom: -15px;
+  font-weight: 100;
+}
+
+#icon-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.footer-two {
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
